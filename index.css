@@ -1,0 +1,154 @@
+ html {
+   word-break     : break-word;
+   scroll-behavior: smooth;
+   text-rendering : optimizeLegibility;
+   text-align     : center;
+   user-select    : none;
+ }
+
+ *,
+ ::before,
+ ::after {
+   margin        : 0;
+   padding       : 0;
+   border        : 0;
+   outline       : 0;
+   vertical-align: baseline;
+   box-sizing    : border-box;
+ }
+
+ /* En teoría anulado con `user-select: none;` */
+ ::selection {
+   background-color: #336699;
+   color           : white;
+   text-shadow     : 0 0 0 transparent;
+ }
+
+ body {
+   overflow-wrap   : break-word;
+   font-size       : calc(1em + 1vw);
+   font-style      : normal;
+   font-weight     : 400;
+   font-variant    : small-caps;
+   background-color:PINK;
+   color           : #666;
+ }
+
+ #awp {
+   /* // Controlado por JS: position       : relative; */
+   /* // Controlado por JS: overflow       : auto; */
+   top            : 0;
+   left           : 0;
+   bottom         : 0;
+   right          : 0;
+   z-index        : 1;
+   display        : flex;
+   flex-direction : column;
+   justify-content: center;
+   align-items    : center;
+   padding        : 1vh 2vw;
+ }
+
+ #aplicacion {
+   position        : relative;
+   top             : 0;
+   left            : 0;
+   bottom          : 0;
+   right           : 0;
+   background-color: white;
+   z-index         : 2;
+   display         : flex;
+   flex-direction  : column;
+   justify-content : center;
+   align-items     : center;
+   border-radius   : 1.2rem;
+   max-width       : 96vw;
+ }
+
+ #informacion {
+   display        : flex;
+   flex-direction : column;
+   justify-content: center;
+   align-items    : center;
+   max-width      : 96vw;
+   padding        : 2vh;
+ }
+
+ #titulo {
+   margin-bottom: 2vh;
+ }
+
+ #subtitulo {
+   margin-bottom: 1vh;
+ }
+
+ #imagen {
+   overflow: hidden;
+   padding : 1vh 1vw;
+ }
+
+ img {
+   max-width    : 100%;
+   width        : 100%;
+   height       : auto;
+   border       : whitesmoke double 0.8rem;
+   border-radius: 1.2rem;
+ }
+
+ #descripcion {
+   margin      : 1vh 0;
+   font-style  : italic;
+   font-weight : bold;
+   font-variant: normal;
+ }
+
+ #descripcion>a {
+   color          : inherit;
+   text-decoration: none;
+ }
+
+
+ @media (orientation: landscape) and (min-width: 1080px) {
+
+   #awp,
+   #informacion {
+     padding: 2vw;
+   }
+
+ }
+
+ @media (orientation: landscape) and (max-width: 1080px) {
+
+   #awp {
+     position: absolute;
+     padding : 0;
+   }
+
+   #aplicacion,
+   #informacion {
+     max-width       : none;
+     max-height      : none;
+     width           : 100vw;
+     height          : 100vh;
+     background-color: black;
+     border-radius   : 0;
+     padding         : 0;
+   }
+
+   #titulo,
+   #subtitulo,
+   #descripcion {
+     display: none;
+   }
+
+   #imagen {
+     overflow: auto;
+     padding : 0;
+   }
+
+   img {
+     border       : 0;
+     border-radius: 0;
+   }
+
+ }

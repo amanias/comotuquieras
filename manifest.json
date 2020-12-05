@@ -1,0 +1,23 @@
+{
+	"dir": "ltr",
+	"lang": "es-ES",
+	"scope": "/",
+	"name": "TEST de APPs móviles para todos",
+	"short_name": "TEST Como Tú Quieras Es",	
+	"description": "Aplicaciones móviles para todos, como tú quieras y actualizando cuando tú quieras.",
+	"start_url": "./index.html",
+	"display": "standalone",
+	"orientation": "any",
+	"background_color": "#336699",
+	"theme_color": "#000000",
+	"icons": [
+		{
+			"src": "./iconos/maskable_icon.png",
+			"sizes": "1024x1024",
+			"type": "image/png",
+			"purpose": "any maskable"
+		}
+	],
+    "related_applications": [],
+    "prefer_related_applications": false
+}
