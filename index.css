@@ -76,10 +76,12 @@
 
  #titulo {
    margin-bottom: 2vh;
+   text-wrap: balance;
  }
 
  #subtitulo {
    margin-bottom: 1vh;
+   text-wrap: pretty;
  }
 
  #imagen {
